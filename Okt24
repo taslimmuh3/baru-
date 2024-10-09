@@ -1,0 +1,53 @@
+
+x
+Python is a well-known programming language. Python is very easy to understand and code. It is believed to be developer-friendly. Any beginner can learn to code in python within a short span of time.
+
+Some of most interesting features of this language are as follows :
+
+
+Python is open source and free
+Portable and dynamic
+Super easy to understand etc.
+Creating Easy Games in Python
+Let’s now implement some easy games in Python that you can build as a beginner to get a headstart in your learning curve!
+
+1. A Quiz Game in Python
+This is a very simple text-based game in python. It a small quiz which you can make for yourself as well or your friends. We do not need to import any modules for this game which makes it easier! Try it yourself 😉
+
+
+Here are use:
+
+if-else statement – For checking answers
+Print statement – for printing outputs
+print('Welcome to AskPython Quiz')
+answer=input('Are you ready to play the Quiz ? (yes/no) :')
+score=0
+total_questions=3
+ 
+if answer.lower()=='yes':
+    answer=input('Question 1: What is your Favourite programming language?')
+    if answer.lower()=='python':
+        score += 1
+        print('correct')
+    else:
+        print('Wrong Answer :(')
+ 
+ 
+    answer=input('Question 2: Do you follow any author on AskPython? ')
+    if answer.lower()=='yes':
+        score += 1
+        print('correct')
+    else:
+        print('Wrong Answer :(')
+ 
+    answer=input('Question 3: What is the name of your favourite website for learning Python?')
+    if answer.lower()=='askpython':
+        score += 1
+        print('correct')
+    else:
+        print('Wrong Answer :(')
+ 
+print('Thankyou for Playing this small quiz game, you attempted',score,"questions correctly!")
+mark=(score/total_questions)*100
+print('Marks obtained:',mark)
+print('BYE!')
